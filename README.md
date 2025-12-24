@@ -50,7 +50,7 @@
        kubelet version
        kubectl --version
 
-7. Set up the CNI plugin flannel on the master node so that its state appears to be ready.
+7. Set up the CNI plugin flannel on the master node so that its state appears to be ready.  ( taken from github flannel repo link )
 
        kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
