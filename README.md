@@ -7,6 +7,7 @@ vi /etc/hosts
 #Example
 
 45.282.443.4 master
+
 172.234.453.567 worker
 
 3.  Run the scripts of the respective nodes on each node present in the github repository.
@@ -25,6 +26,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 
 <img width="1196" height="413" alt="kubeadm init" src="https://github.com/user-attachments/assets/321ffdf0-7769-4b2f-84af-6c75176d4fa9" />
+
 
 5. Check if the kubernetes components ( kubeadm , kubectl , kubelet ) are installed or not.
 
