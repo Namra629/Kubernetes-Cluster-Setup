@@ -28,7 +28,7 @@
 
 
 
-<img width="1196" height="413" alt="kubeadm init" src="https://github.com/user-attachments/assets/eb27ff68-df65-4d9f-9ba9-5afa3581a7e4" />
+    <img width="1100" height="300" alt="kubeadm init" src="https://github.com/user-attachments/assets/eb27ff68-df65-4d9f-9ba9-5afa3581a7e4" />
 
 
 
@@ -49,7 +49,7 @@
         --discovery-token-ca-cert-hash sha256:2fee5dbf0b9ca44f5c47dbf3ad79eb1c947cdd5030ea06640802b0ce1ffa4da2
         
 
-<img width="1157" height="377" alt="image" src="https://github.com/user-attachments/assets/ce2121b0-1445-4dc8-883b-21b9f12e8456" />
+<img width="1100" height="300" alt="image" src="https://github.com/user-attachments/assets/ce2121b0-1445-4dc8-883b-21b9f12e8456" />
 
 
 
