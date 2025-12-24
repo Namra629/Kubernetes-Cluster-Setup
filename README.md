@@ -47,13 +47,16 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 
 kubeadm join 10.0.0.5:6443 --token tpi4er.6ns8zopweoewwmba \
         --discovery-token-ca-cert-hash sha256:2fee5dbf0b9ca44f5c47dbf3ad79eb1c947cdd5030ea06640802b0ce1ffa4da2
+        
 
-<img width="1117" height="267" alt="image" src="https://github.com/user-attachments/assets/533c4c67-427a-4f5b-ad81-6ff7556a10a1" />
+<img width="1157" height="377" alt="image" src="https://github.com/user-attachments/assets/ce2121b0-1445-4dc8-883b-21b9f12e8456" />
+
 
 
 8. Check the status of the nodes. (On master node)
 
 kubectl get no
+
 
 <img width="647" height="86" alt="nodes ready" src="https://github.com/user-attachments/assets/252fd70f-5d5e-4598-ac07-00bd7a907d62" />
 
