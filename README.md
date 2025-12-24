@@ -25,7 +25,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 export KUBECONFIG=/etc/kubernetes/admin.conf
 
 
-<img width="1423" height="405" alt="kubeadm join" src="https://github.com/user-attachments/assets/b9b2df39-8055-49c3-a205-dfa4bfb80513" />
+
+<img width="1117" height="267" alt="image" src="https://github.com/user-attachments/assets/533c4c67-427a-4f5b-ad81-6ff7556a10a1" />
 
 
 
