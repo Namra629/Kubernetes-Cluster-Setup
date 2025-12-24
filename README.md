@@ -10,7 +10,7 @@
 
            172.234.453.567 worker
 
-3.  Run the scripts of the respective nodes on each node present in the github repository.
+3.  As a regular user,  run the scripts of the respective nodes on each node present in the github repository.
 
 4.  The master node will be in NotReady state at this time.  On master node , run the commands that appear after running the script.
 
