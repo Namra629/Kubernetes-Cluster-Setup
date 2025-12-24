@@ -10,7 +10,7 @@
 
            172.234.453.567 worker
 
-3.  As a regular user,  run the scripts of the respective nodes on each node present in the github repository.
+3.  On your local VM as a regular user,  run the scripts of the respective nodes on each node present in the github repository.
 
           # Make them executable first
 
