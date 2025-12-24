@@ -17,7 +17,9 @@ vi /etc/hosts
 #Run these as a regular user.
 
 mkdir -p $HOME/.kube
+
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 #Run this as a root user.
@@ -26,7 +28,8 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 
 
-<img width="1117" height="267" alt="image" src="https://github.com/user-attachments/assets/533c4c67-427a-4f5b-ad81-6ff7556a10a1" />
+<img width="1196" height="413" alt="kubeadm init" src="https://github.com/user-attachments/assets/eb27ff68-df65-4d9f-9ba9-5afa3581a7e4" />
+
 
 
 
@@ -45,7 +48,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 kubeadm join 10.0.0.5:6443 --token tpi4er.6ns8zopweoewwmba \
         --discovery-token-ca-cert-hash sha256:2fee5dbf0b9ca44f5c47dbf3ad79eb1c947cdd5030ea06640802b0ce1ffa4da2
 
-<img width="1690" height="926" alt="kubeadm join" src="https://github.com/user-attachments/assets/4a8b285f-1b2b-411e-bb2a-d3a6d55f571d" />
+<img width="1117" height="267" alt="image" src="https://github.com/user-attachments/assets/533c4c67-427a-4f5b-ad81-6ff7556a10a1" />
 
 
 8. Check the status of the nodes. (On master node)
