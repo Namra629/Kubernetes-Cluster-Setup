@@ -25,7 +25,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 export KUBECONFIG=/etc/kubernetes/admin.conf
 
 
-<img width="1196" height="413" alt="kubeadm init" src="https://github.com/user-attachments/assets/321ffdf0-7769-4b2f-84af-6c75176d4fa9" />
+<img width="1423" height="405" alt="kubeadm join" src="https://github.com/user-attachments/assets/b9b2df39-8055-49c3-a205-dfa4bfb80513" />
+
 
 
 5. Check if the kubernetes components ( kubeadm , kubectl , kubelet ) are installed or not.
