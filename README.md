@@ -13,13 +13,13 @@ vi /etc/hosts
 
 4.  The master node will be in NotReady state at this time.  On master node , run the commands that appear after running the script.
 
-# Run these as a regular user.
+#Run these as a regular user.
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
-# Run this as a root user.
+#Run this as a root user.
 
 export KUBECONFIG=/etc/kubernetes/admin.conf
 
@@ -43,6 +43,7 @@ kubeadm join 10.0.0.5:6443 --token tpi4er.6ns8zopweoewwmba \
 
 <img width="1690" height="926" alt="kubeadm join" src="https://github.com/user-attachments/assets/4a8b285f-1b2b-411e-bb2a-d3a6d55f571d" />
 
+
 8. Check the status of the nodes. (On master node)
 
 kubectl get no
@@ -50,7 +51,7 @@ kubectl get no
 <img width="647" height="86" alt="nodes ready" src="https://github.com/user-attachments/assets/252fd70f-5d5e-4598-ac07-00bd7a907d62" />
 
 
-8.  This token expires in almost 24 hours, to re-create it use this command.
+9.  This token expires in almost 24 hours, to re-create it use this command.
 
 kubeadm token create --print-join-command
 
