@@ -12,7 +12,16 @@
 
 3.  As a regular user,  run the scripts of the respective nodes on each node present in the github repository.
 
-4.  The master node will be in NotReady state at this time.  On master node , run the commands that appear after running the script.
+          # Make them executable first
+
+           chmod +x master.sh
+
+           # Then run them.
+
+            ./master.sh
+    and likeways on worker node.
+
+5.  The master node will be in NotReady state at this time.  On master node , run the commands that appear after running the script.
 
            #Run these as a regular user.
 
@@ -33,17 +42,17 @@
 
 
 
-5. Check if the kubernetes components ( kubeadm , kubectl , kubelet ) are installed or not.
+6. Check if the kubernetes components ( kubeadm , kubectl , kubelet ) are installed or not.
 
        kubeadm version
        kubelet version
        kubectl --version
 
-6. Set up the CNI plugin flannel on the master node so that its state appears to be ready.
+7. Set up the CNI plugin flannel on the master node so that its state appears to be ready.
 
        kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
-7.  Run the kubeadm join command on the worker node as a root user.
+8.  Run the kubeadm join command on the worker node as a root user.
 
             kubeadm join 10.0.0.5:6443 --token tpi4er.6ns8zopweoewwmba \
         --discovery-token-ca-cert-hash sha256:2fee5dbf0b9ca44f5c47dbf3ad79eb1c947cdd5030ea06640802b0ce1ffa4da2
@@ -53,7 +62,7 @@
 
 
 
-8. Check the status of the nodes. (On master node)
+9. Check the status of the nodes. (On master node)
 
        kubectl get no
 
@@ -61,7 +70,7 @@
     <img width="647" height="86" alt="nodes ready" src="https://github.com/user-attachments/assets/252fd70f-5d5e-4598-ac07-00bd7a907d62" />
 
 
-9.  This token expires in almost 24 hours, to re-create it use this command.
+10.  This token expires in almost 24 hours, to re-create it use this command.
 
           kubeadm token create --print-join-command
 
