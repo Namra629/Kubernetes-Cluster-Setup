@@ -1,3 +1,5 @@
+# Kubernetes Cluster Set up via kubeadm tool (not minikube cluster setup)
+
 1.  Edit the hosts files on both the nodes 
 
            vi /etc/hosts
