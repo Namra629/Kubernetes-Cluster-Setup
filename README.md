@@ -5,7 +5,9 @@ Kubernetes is a powerful container orchestration platform used for automating th
 # Pre-requisites
 
 -> Minimum 2GB RAM or more.
+
 -> Minimum 2 CPU cores (or 2 vCPUs).
+
 -> 20 GB of free disk space
 
 # Set up
