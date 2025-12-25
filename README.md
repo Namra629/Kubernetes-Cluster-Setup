@@ -4,6 +4,8 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 # Pre-requisites
 
+-> Ubuntu VM
+
 -> Minimum 2GB RAM or more.
 
 -> Minimum 2 CPU cores (or 2 vCPUs).
@@ -87,6 +89,9 @@ Kubernetes is a powerful container orchestration platform used for automating th
 10.  This token expires in almost 24 hours, to re-create it use this command.
 
           kubeadm token create --print-join-command
+
+Reference:  Medium Article https://hbayraktar.medium.com/how-to-install-kubernetes-cluster-on-ubuntu-22-04-step-by-step-guide-7dbf7e8f5f99
+
 
 
 
