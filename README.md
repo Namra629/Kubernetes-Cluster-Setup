@@ -6,6 +6,8 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 -> Ubuntu VM
 
+-> Root user privileges if you are not a root user or owner of the VM, but added as a general user to that VM.
+
 -> Minimum 2GB RAM or more.
 
 -> Minimum 2 CPU cores (or 2 vCPUs).
