@@ -1,5 +1,15 @@
 # Kubernetes Cluster Set up via kubeadm tool (not minikube cluster setup)
 
+Kubernetes is a powerful container orchestration platform used for automating the deployment, scaling, and management of containerized applications.
+
+# Pre-requisites
+
+-> Minimum 2GB RAM or more.
+-> Minimum 2 CPU cores (or 2 vCPUs).
+-> 20 GB of free disk space
+
+# Set up
+
 1.  Edit the hosts files on both the nodes 
 
            vi /etc/hosts
