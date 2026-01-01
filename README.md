@@ -28,7 +28,19 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
            172.234.453.567 worker
 
-3.  On your local VM as a regular user,  run the scripts of the respective nodes on each node present in the github repository.
+3.  Open the firewall ports for kubenretes.
+
+        sudo firewall-cmd --permanent --add-port=2379/tcp
+        sudo firewall-cmd --permanent --add-port=2380/tcp
+        sudo firewall-cmd --permanent --add-port=6443/tcp
+        sudo firewall-cmd --permanent --add-port=10248/tcp
+        sudo firewall-cmd --permanent --add-port=10250/tcp
+        sudo firewall-cmd --permanent --add-port=10257/tcp
+        sudo firewall-cmd --permanent --add-port=10259/tcp
+        sudo firewall-cmd --reload
+        sudo firewall-cmd --list-ports
+
+4.  On your local VM as a regular user,  run the scripts of the respective nodes on each node present in the github repository.
 
           # Make them executable first
 
@@ -56,7 +68,6 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 
     <img width="1100" height="300" alt="kubeadm init" src="https://github.com/user-attachments/assets/eb27ff68-df65-4d9f-9ba9-5afa3581a7e4" />
-
 
 
 
@@ -92,8 +103,10 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
           kubeadm token create --print-join-command
 
-Reference:  Medium Article https://hbayraktar.medium.com/how-to-install-kubernetes-cluster-on-ubuntu-22-04-step-by-step-guide-7dbf7e8f5f99
+References:  
 
+     Medium Article https://hbayraktar.medium.com/how-to-install-kubernetes-cluster-on-ubuntu-22-04-step-by-step-guide-7dbf7e8f5f99
+     Medium Article  https://medium.com/@usmanasim11/setting-up-a-kubernetes-v1-32-0-air-gapped-cluster-with-containerd-flannel-2f2cec6adfe0
 
 
 
