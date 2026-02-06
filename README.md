@@ -16,7 +16,7 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 # Set up
 
-1.  Edit the hosts files on both the nodes for the nodes to ping ( reach or connect) each other through their names internally instead of IPs.
+1.  Edit the hosts files on both the nodes for the nodes to ping ( reach or connect) each other through their names internally instead of IPs. Private IPs are static and fastest to route.
 
            vi /etc/hosts
 
