@@ -40,7 +40,12 @@ Kubernetes is a powerful container orchestration platform used for automating th
         sudo firewall-cmd --reload
         sudo firewall-cmd --list-ports
 
-4.  On your local VM as a regular user,  run the scripts of the respective nodes on each node present in the github repository.
+     If Azure VM, set the network rules like this both for master and worker node using their private IPs.
+
+     <img width="1887" height="690" alt="image" src="https://github.com/user-attachments/assets/90a26d04-b16c-4cab-a651-b455eb772aa0" />
+
+
+5.  On your local VM as a regular user,  run the scripts of the respective nodes on each node present in the github repository.
 
           # Make them executable first
 
@@ -51,7 +56,7 @@ Kubernetes is a powerful container orchestration platform used for automating th
             ./master.sh
     and likeways on worker node.
 
-5.  The master node will be in NotReady state at this time.  On master node , run the commands that appear after running the script.
+6.  The master node will be in NotReady state at this time.  On master node , run the commands that appear after running the script.
 
            #Run these as a regular user.
 
@@ -71,17 +76,17 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 
 
-6. Check if the kubernetes components ( kubeadm , kubectl , kubelet ) are installed or not.
+7. Check if the kubernetes components ( kubeadm , kubectl , kubelet ) are installed or not.
 
        kubeadm version
        kubelet version
        kubectl --version
 
-7. Set up the CNI plugin flannel on the master node so that its state appears to be ready.  ( taken from github flannel repo link )
+8. Set up the CNI plugin flannel on the master node so that its state appears to be ready.  ( taken from github flannel repo link )
 
        kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
-8.  Run the kubeadm join command on the worker node as a root user.
+9.  Run the kubeadm join command on the worker node as a root user.
 
             kubeadm join 10.0.0.5:6443 --token tpi4er.6ns8zopweoewwmba \
         --discovery-token-ca-cert-hash sha256:2fee5dbf0b9ca44f5c47dbf3ad79eb1c947cdd5030ea06640802b0ce1ffa4da2
@@ -91,7 +96,7 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 
 
-9. Check the status of the nodes. (On master node)
+10. Check the status of the nodes. (On master node)
 
        kubectl get no
 
@@ -99,7 +104,7 @@ Kubernetes is a powerful container orchestration platform used for automating th
     <img width="647" height="86" alt="nodes ready" src="https://github.com/user-attachments/assets/252fd70f-5d5e-4598-ac07-00bd7a907d62" />
 
 
-10.  This token expires in almost 24 hours, to re-create it use this command.
+11.  This token expires in almost 24 hours, to re-create it use this command.
 
           kubeadm token create --print-join-command
 
