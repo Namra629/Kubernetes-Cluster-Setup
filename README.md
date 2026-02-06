@@ -16,17 +16,17 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
 # Set up
 
-1.  Edit the hosts files on both the nodes 
+1.  Edit the hosts files on both the nodes for the nodes to ping ( reach or connect) each other through their names internally instead of IPs.
 
            vi /etc/hosts
 
-2.  Add the nodes Public IPs and their respective names. 
+2.  Add the nodes Private IPs and their respective names. 
 
           #Example
 
-           45.282.443.4 master
+           10.0.0.7 master
 
-           172.234.453.567 worker
+           10.0.0.8 worker
 
 3.  Open the firewall ports for kubenretes.
 
