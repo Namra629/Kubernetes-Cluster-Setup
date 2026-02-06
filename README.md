@@ -20,7 +20,13 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
            vi /etc/hosts
 
-2.  Add the nodes Private IPs and their respective names. 
+    Test from opposite nodes. The connectivity is developed so that you can ssh into another node from the one node.
+
+         ping worker
+         ping master
+
+
+3.  Add the nodes Private IPs and their respective names. 
 
           #Example
 
@@ -28,7 +34,7 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
            10.0.0.8 worker
 
-3.  Open the firewall ports for kubenretes.
+4.  Open the firewall ports for kubenretes.
 
         sudo firewall-cmd --permanent --add-port=2379/tcp
         sudo firewall-cmd --permanent --add-port=2380/tcp
