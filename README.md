@@ -109,8 +109,11 @@ Kubernetes is a powerful container orchestration platform used for automating th
 
     <img width="647" height="86" alt="nodes ready" src="https://github.com/user-attachments/assets/252fd70f-5d5e-4598-ac07-00bd7a907d62" />
 
+11. Reboot the system to apply the hostname changes -> if required .
 
-11.  This token expires in almost 24 hours, to re-create it use this command.
+         sudo reboot
+
+12.  This token expires in almost 24 hours, to re-create it use this command.
 
           kubeadm token create --print-join-command
 
